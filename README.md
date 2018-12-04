@@ -1,5 +1,9 @@
 # TaskCompletionSourceEventAwaiterExample
 
+Really simple implementation of TCS to show how you can await the result of an event.
+
+## Code
+
 ```cs
     class Program
     {
@@ -42,7 +46,7 @@
     }
 ```
 
-OUTPUT
+## Output
 
 ```
 Welcome to the application
