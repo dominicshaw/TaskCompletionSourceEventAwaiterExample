@@ -1,6 +1,9 @@
-# TaskCompletionSourceEventAwaiterExample
+﻿using System;
+using System.Threading;
+using System.Threading.Tasks;
 
-```cs
+namespace TaskCompletionSourceEventAwaiterExample
+{
     class Program
     {
         static void Main(string[] args)
@@ -40,15 +43,4 @@
             new Timer(_ => WorkComplete?.Invoke(x + y), null, timeout, Timeout.InfiniteTimeSpan);
         }
     }
-```
-
-OUTPUT
-
-```
-Welcome to the application
-Performing sync operations...
-Completed sync operations, starting async operations...
-Result of async operation: 6
-I have completed all operations - both sync and async.
-Press ENTER to quit.
-```
+}
